@@ -53,7 +53,7 @@ export default function HomePage() {
             className="max-w-3xl"
           >
             <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary-foreground">
-              Логистический центр BRAVO
+              Логистический центр "БРАВО"
             </h1>
             <p className="text-xl md:text-2xl font-medium mb-4 text-primary-foreground/90">
               Современный транспортно-логистический хаб Дальнего Востока
