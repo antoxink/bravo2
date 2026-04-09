@@ -7,9 +7,8 @@ export default function Footer() {
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="BRAVO" className="h-12 w-auto" />
-              <span className="font-heading font-bold text-xl">BRAVO</span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logo} alt="BRAVO" className="h-16 w-auto" />
             </Link>
             <p className="text-sm opacity-70 leading-relaxed">
               Современный транспортно-логистический хаб Дальнего Востока. ООО «БРАВО ГРУПП», Хабаровск.

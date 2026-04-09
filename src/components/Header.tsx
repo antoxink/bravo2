@@ -21,11 +21,10 @@ export default function Header() {
   const { pathname } = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-lg border-b border-border/50 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-section-dark backdrop-blur-lg border-b border-muted-foreground/20 shadow-sm">
       <div className="container flex items-center justify-between h-16 lg:h-20">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="BRAVO логистический центр Хабаровск" className="h-10 lg:h-12 w-auto" />
-          <span className="font-heading font-bold text-lg hidden sm:block text-foreground">BRAVO</span>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="BRAVO логистический центр Хабаровск" className="h-14 lg:h-16 w-auto" />
         </Link>
 
         <nav className="hidden xl:flex items-center gap-1">
@@ -35,8 +34,8 @@ export default function Header() {
               to={item.path}
               className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                 pathname === item.path
-                  ? "bg-primary/10 text-primary"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  ? "bg-primary/20 text-primary"
+                  : "text-section-dark-foreground/70 hover:text-section-dark-foreground hover:bg-muted-foreground/10"
               }`}
             >
               {item.label}
@@ -46,7 +45,7 @@ export default function Header() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="xl:hidden p-2 text-foreground"
+          className="xl:hidden p-2 text-section-dark-foreground"
           aria-label="Меню"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -54,7 +53,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="xl:hidden bg-card border-b border-border shadow-lg">
+        <div className="xl:hidden bg-section-dark border-b border-muted-foreground/20 shadow-lg">
           <nav className="container py-4 flex flex-col gap-1">
             {navItems.map((item) => (
               <Link
@@ -63,8 +62,8 @@ export default function Header() {
                 onClick={() => setOpen(false)}
                 className={`px-4 py-3 text-sm font-medium rounded-md ${
                   pathname === item.path
-                    ? "bg-primary/10 text-primary"
-                    : "text-muted-foreground hover:bg-muted"
+                    ? "bg-primary/20 text-primary"
+                    : "text-section-dark-foreground/70 hover:bg-muted-foreground/10"
                 }`}
               >
                 {item.label}
