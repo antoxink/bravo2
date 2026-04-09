@@ -14,6 +14,7 @@ import GalleryPage from "./pages/GalleryPage";
 import NewsPage from "./pages/NewsPage";
 import ContactsPage from "./pages/ContactsPage";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
