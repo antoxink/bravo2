@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
-import { toast } from "sonner";
 
 const categories = ["Все", "Склады", "Инфраструктура", "Сервис", "Коммерция"];
 
@@ -21,10 +21,6 @@ const objects = [
 export default function ObjectsPage() {
   const [filter, setFilter] = useState("Все");
   const filtered = filter === "Все" ? objects : objects.filter(o => o.category === filter);
-
-  const handleRent = (name: string) => {
-    toast.success(`Заявка на аренду "${name}" принята! Мы свяжемся с вами.`);
-  };
 
   return (
     <Layout>
@@ -62,8 +58,8 @@ export default function ObjectsPage() {
                     <span className="text-sm font-semibold text-primary whitespace-nowrap">{obj.area}</span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{obj.desc}</p>
-                  <Button size="sm" onClick={() => handleRent(obj.name)}>
-                    Оставить заявку на аренду
+                  <Button size="sm" asChild>
+                    <Link to="/contacts#contact-form">Оставить заявку на аренду</Link>
                   </Button>
                 </div>
               </motion.div>
