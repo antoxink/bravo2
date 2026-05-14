@@ -11,7 +11,7 @@ export default function Footer() {
               <img src={logo} alt="BRAVO" className="h-16 w-auto" />
             </Link>
             <p className="text-sm opacity-70 leading-relaxed">
-              Современный транспортно-логистический хаб Дальнего Востока. ООО «БРАВО ГРУПП», Хабаровск.
+              Современный транспортно-логистический центр<br /> Дальнего Востока. ООО «БРАВО ГРУПП», Хабаровск.
             </p>
           </div>
 
