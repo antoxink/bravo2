@@ -37,7 +37,7 @@ export default function NewsPage() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-muted-foreground">Следите за новостями проекта BRAVO</p>
+            <p className="text-muted-foreground">Следите за новостями проекта БРАВО</p>
           </div>
         </div>
       </section>
