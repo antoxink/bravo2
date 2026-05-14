@@ -29,7 +29,7 @@ export default function Footer() {
             <h4 className="font-heading font-bold mb-4">Контакты</h4>
             <div className="flex flex-col gap-2 text-sm opacity-70">
               <p>680001, Хабаровский край, г.Хабаровск, ул.Попова, д.3</p>
-              <a href="tel:+74212000000" className="hover:opacity-100 transition-opacity">+7 (4212) 00-00-00</a>
+              <a href="tel:+74212260420" className="hover:opacity-100 transition-opacity">+7 (4212) 26-04-20</a>
               <a href="mailto:info@bravo-group.ru" className="hover:opacity-100 transition-opacity">info@bravo-group.ru</a>
             </div>
           </div>
