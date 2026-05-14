@@ -55,8 +55,8 @@ export default function HomePage() {
             <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary-foreground">
               Логистический центр "БРАВО"
             </h1>
-            <p className="text-xl md:text-2xl font-medium mb-4 text-primary-foreground/90">
-              Современный транспортно-логистический хаб Дальнего Востока
+            <p className="text-xl md:text-2xl font-medium mb-4 text-primary-foreground/90 leading-tight">
+              Современный транспортно-логистический центр<br /> Дальнего Востока
             </p>
             <p className="text-lg mb-8 text-primary-foreground/70 leading-relaxed">
               41,9 га • Более 206 000 м² объектов • Более 118 000 м² складских площадей • Более 600 000 м³ хранения
