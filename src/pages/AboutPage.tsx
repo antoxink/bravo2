@@ -31,7 +31,7 @@ export default function AboutPage() {
         <div className="container relative z-10 text-center py-12">
           <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-primary-foreground mb-4">О проекте</h1>
           <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
-            Логистический центр BRAVO — масштабный инвестиционный проект в Хабаровске
+            Логистический центр БРАВО — масштабный инвестиционный проект в Хабаровске
           </p>
         </div>
       </section>
@@ -42,10 +42,10 @@ export default function AboutPage() {
             <p className="text-lg leading-relaxed text-muted-foreground mb-6">
               В рамках проекта планируется строительство логистического центра, который обеспечит качественную логистику 
               между регионами Дальневосточного федерального округа и югом России. Общий объём инвестиций составляет 
-              <strong className="text-foreground"> 7,65 млрд руб.</strong> без НДС.
+              <strong className="text-foreground"> более 10 млрд руб.</strong>
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Логистический центр BRAVO — это более 206 000 м² объектов на территории 41,9 га, включая более 
+              Логистический центр БРАВО — это более 206 000 м² объектов на территории 41,9 га, включая более 
               118 000 м² складских площадей и более 600 000 м³ объёмов хранения. Проект реализуется компанией 
               ООО «БРАВО ГРУПП» в Индустриальном районе г. Хабаровска.
             </p>

@@ -5,13 +5,13 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 
 const images = [
-  { src: "/images/hero-night.jpg", alt: "Логистический центр BRAVO — ночной рендер" },
-  { src: "/images/hero.jpg", alt: "3D-визуализация логистического центра BRAVO" },
-  { src: "/images/aerial.jpg", alt: "Аэросъёмка территории BRAVO" },
+  { src: "/images/hero-night.jpg", alt: "Логистический центр БРАВО — ночной рендер" },
+  { src: "/images/hero.jpg", alt: "3D-визуализация логистического центра БРАВО" },
+  { src: "/images/aerial.jpg", alt: "Аэросъёмка территории БРАВО" },
   { src: "/images/masterplan.png", alt: "Генеральный план логистического центра" },
   { src: "/images/warehouse1.jpg", alt: "Склады класса А — рендер" },
-  { src: "/images/warehouse2.jpeg", alt: "Холодильные склады BRAVO" },
-  { src: "/images/warehouse3.jpeg", alt: "Выставочный центр BRAVO" },
+  { src: "/images/warehouse2.jpeg", alt: "Холодильные склады БРАВО" },
+  { src: "/images/warehouse3.jpeg", alt: "Выставочный центр БРАВО" },
   { src: "/images/warehouse4.jpeg", alt: "Сельскохозяйственный рынок" },
   { src: "/images/warehouse-interior.jpg", alt: "Интерьер современного склада" },
   { src: "/images/parking.jpg", alt: "Парковка для большегрузов" },
@@ -27,7 +27,7 @@ export default function GalleryPage() {
     <Layout>
       <section className="py-20">
         <div className="container">
-          <SectionTitle title="Галерея" subtitle="Фото и 3D-рендеры логистического центра BRAVO" />
+          <SectionTitle title="Галерея" subtitle="Фото и 3D-рендеры логистического центра БРАВО" />
 
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
             {images.map((img, i) => (

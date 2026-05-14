@@ -38,7 +38,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <img
             src="/images/hero-night.jpg"
-            alt="Логистический центр BRAVO Хабаровск — ночной вид"
+            alt="Логистический центр БРАВО Хабаровск — ночной вид"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
