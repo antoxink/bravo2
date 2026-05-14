@@ -7,8 +7,8 @@ import SectionTitle from "@/components/SectionTitle";
 
 const stats = [
   { value: "41,9 га", label: "Общая площадь земель" },
-  { value: "6,7 млрд ₽", label: "Капитальные вложения" },
-  { value: "500+", label: "Рабочих мест" },
+  { value: "750+", label: "Рабочих мест" },
+  { value: "500+", label: "Новых вакансий" },
   { value: "739 млн ₽", label: "Налогов в год" },
 ];
 
@@ -53,7 +53,7 @@ export default function HomePage() {
             className="max-w-3xl"
           >
             <h1 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-primary-foreground">
-              Логистический центр "БРАВО"
+              Логистический центр<br /> <span className="block md:inline opacity-90 italic">"БРАВО"</span>
             </h1>
             <p className="text-xl md:text-2xl font-medium mb-4 text-primary-foreground/90 leading-tight">
               Современный транспортно-логистический центр<br /> Дальнего Востока
@@ -100,7 +100,7 @@ export default function HomePage() {
       {/* ADVANTAGES */}
       <section className="py-20 bg-section-light">
         <div className="container">
-          <SectionTitle title="Преимущества BRAVO" subtitle="Уникальные возможности для вашего бизнеса" />
+          <SectionTitle title='Преимущества ЛЦ "БРАВО"' subtitle="Уникальные возможности для вашего бизнеса" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((a, i) => (
               <motion.div
@@ -154,11 +154,11 @@ export default function HomePage() {
       <section className="py-20 bg-section-dark">
         <div className="container text-center">
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-section-dark-foreground mb-4">
-            Почему выбирают BRAVO
+            Почему выбирают "БРАВО"
           </h2>
           <p className="text-section-dark-foreground/70 max-w-2xl mx-auto mb-8 text-lg">
             Единственный на Дальнем Востоке логистический центр с полным зонированием по категориям товаров, 
-            собственной ж/д веткой и статусом резидента ТОР.
+            собственной ж/д веткой, разгрузочной площадкой и статусом резидента ТОР.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="font-semibold">
