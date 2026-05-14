@@ -7,6 +7,7 @@ import ContactForm from "@/components/ContactForm";
 const contactInfo = [
   { icon: MapPin, label: "Адрес", value: "680001, Хабаровский край, г.Хабаровск, ул.Попова, д.3" },
   { icon: Phone, label: "Телефон", value: "+7 (4212) 26-04-20", href: "tel:+74212260420" },
+  { icon: Phone, label: "Телефон", value: "+7 (924) 311-89-60", href: "tel:+79243118960" },
   { icon: Mail, label: "Email", value: "info@bravo-group.ru", href: "mailto:info@bravo-group.ru" },
   { icon: Clock, label: "Режим работы", value: "Пн–Пт: 9:00–18:00" },
 ];
@@ -57,9 +58,10 @@ export default function ContactsPage() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-card rounded-xl p-8 border border-border shadow-sm"
+              className="bg-card rounded-xl p-8 border border-border shadow-sm scroll-mt-24"
+              id="contact-form"
             >
-              <ContactForm title="Обратная связь" submitLabel="Отправить сообщение" />
+              <ContactForm title="Обратная связь" submitLabel="Отправить сообщение" source="Контакты" />
             </motion.div>
           </div>
         </div>
