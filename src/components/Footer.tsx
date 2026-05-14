@@ -10,8 +10,9 @@ export default function Footer() {
             <Link to="/" className="flex items-center mb-4">
               <img src={logo} alt="BRAVO" className="h-16 w-auto" />
             </Link>
-            <p className="text-sm opacity-70 leading-relaxed">
-              Современный транспортно-логистический центр<br /> Дальнего Востока. ООО «БРАВО ГРУПП», Хабаровск.
+            <p className="text-sm opacity-70 leading-relaxed whitespace-pre-line">
+              Современный транспортно-логистический центр Дальнего{"\u00a0"}Востока.{"\n"}
+              ООО «БРАВО ГРУПП», Хабаровск.
             </p>
           </div>
 
