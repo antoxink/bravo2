@@ -7,8 +7,8 @@ import ContactForm from "@/components/ContactForm";
 const contactInfo = [
   { icon: MapPin, label: "Адрес", value: "680001, Хабаровский край, г.Хабаровск, ул.Попова, д.3" },
   { icon: Phone, label: "Телефон", value: "+7 (4212) 26-04-20", href: "tel:+74212260420" },
-  { icon: Phone, label: "Телефон", value: "+7 (924) 311-89-60", href: "tel:+79243118960" },
-  { icon: Mail, label: "Email", value: "info@bravo-group.ru", href: "mailto:info@bravo-group.ru" },
+   { icon: Phone, label: "Телефон", value: "+7 (924) 311-89-60", href: "tel:+79243118960" },
+   { icon: Mail, label: "Email", value: "biz@bravogrp.ru", href: "mailto:biz@bravogrp.ru" },
   { icon: Clock, label: "Режим работы", value: "Пн–Пт: 9:00–18:00" },
 ];
 
