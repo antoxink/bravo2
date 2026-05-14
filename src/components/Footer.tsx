@@ -46,8 +46,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-muted-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60">
-          <p>© 2026 ООО «БРАВО ГРУПП». Все права защищены.</p>
-          <p>ИНН 2724XXXXXX | ОГРН 12427XXXXXXXXX</p>
+          <p>© 2024–2026 ООО «БРАВО ГРУПП». Все права защищены.</p>
+          <p>ИНН 2700029802 | ОГРН 1242700006460</p>
         </div>
       </div>
     </footer>
