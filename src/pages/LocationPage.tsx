@@ -79,17 +79,31 @@ export default function LocationPage() {
       <section className="py-20 bg-muted">
         <div className="container">
           <SectionTitle title="Карта расположения" subtitle="г. Хабаровск, Индустриальный район" />
-          <div className="rounded-xl overflow-hidden shadow-lg border border-border max-w-4xl mx-auto">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46000!2d135.0!3d48.48!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efae8e20e2f0e03%3A0x400cfce68ae0e30!2z0KXQsNCx0LDRgNC-0LLRgdC6!5e0!3m2!1sru!2sru!4v1"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Карта расположения логистического центра BRAVO"
-            />
+          <div className="max-w-4xl mx-auto space-y-4">
+            <div className="rounded-xl overflow-hidden shadow-lg border border-border">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=135.058600%2C48.496900&z=16&pt=135.058600%2C48.496900,pm2rdm&l=map&text=Россия%2C+Хабаровск%2C+улица+Попова%2C+3"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Карта: Россия, Хабаровск, улица Попова, д. 3"
+              />
+            </div>
+            <p className="text-center text-muted-foreground">
+              Адрес: <strong className="text-foreground">Россия, Хабаровск, улица Попова, д. 3</strong>
+              {" · "}
+              <a
+                href="https://yandex.ru/maps/?rtext=~48.496900%2C135.058600&rtt=auto"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Построить маршрут
+              </a>
+            </p>
           </div>
         </div>
       </section>

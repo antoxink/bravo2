@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import Layout from "@/components/Layout";
@@ -30,7 +29,40 @@ export default function BusinessPage() {
     <Layout>
       <section className="py-20 bg-muted">
         <div className="container">
-          <SectionTitle title="Для инвесторов и арендаторов" subtitle="Станьте частью крупнейшего логистического проекта Дальнего Востока" />
+          <SectionTitle title="Для инвесторов и арендаторов" subtitle="Логистический центр «БРАВО» — масштабный инфраструктурный проект в Хабаровске" />
+
+          <div className="max-w-4xl mx-auto mb-12 space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Логистический центр «БРАВО» — это масштабный инфраструктурный проект в Хабаровске,
+              объединяющий современные склады, холодильные комплексы, торгово-выставочные пространства,
+              сервисную инфраструктуру, гостиницу, сельскохозяйственный рынок и транспортный центр
+              федерального уровня. Проект реализуется на территории более 41 гектара с общим объёмом
+              инвестиций свыше <strong className="text-foreground">10 млрд рублей</strong>.
+            </p>
+            <p className="text-foreground font-medium">Сегодня мы открываем возможности для:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>инвесторов, заинтересованных в получении до 25% доли в проекте;</li>
+              <li>предпринимателей и компаний, желающих стать соучастниками строительства и развития территории «БРАВО»;</li>
+              <li>резидентов, которым необходимы склады, торговые помещения, сервисные зоны или специализированные объекты под собственные задачи.</li>
+            </ul>
+            <p>
+              «БРАВО» создаётся как крупнейший логистический центр Дальнего Востока с собственными
+              железнодорожными путями, удобной разгрузочной площадкой, выгодным расположением рядом
+              с ключевыми транспортными артериями и перспективным международным направлением через
+              Китай. Проект ориентирован на растущий рынок логистики, торговли, хранения и
+              распределения грузов.
+            </p>
+            <p className="text-foreground font-medium">Мы предлагаем возможность:</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>войти в проект на этапе активного развития;</li>
+              <li>получить долевое участие в перспективном инфраструктурном объекте;</li>
+              <li>построить собственный объект на территории «БРАВО» по индивидуальным техническим требованиям;</li>
+              <li>разместить бизнес в современном логистическом центре нового поколения.</li>
+            </ul>
+            <p>
+              Если вы ищете надёжный проект с масштабным потенциалом роста — «БРАВО» готов к сотрудничеству.
+            </p>
+          </div>
 
           <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Rent Calculator */}
@@ -110,16 +142,11 @@ export default function BusinessPage() {
         </div>
       </section>
 
-      {/* Forms */}
+      {/* Form */}
       <section className="py-20">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
-              <ContactForm title="Заявка на аренду" submitLabel="Отправить заявку" />
-            </div>
-            <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
-              <ContactForm title="Заявка на инвестиции" submitLabel="Отправить заявку" />
-            </div>
+          <div className="max-w-2xl mx-auto bg-card rounded-xl p-8 border border-border shadow-sm">
+            <ContactForm title="Отправить заявку" submitLabel="Отправить заявку" source="Для бизнеса" />
           </div>
         </div>
       </section>

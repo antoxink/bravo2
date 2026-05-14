@@ -11,6 +11,7 @@ const categories = [
 ];
 
 const infra = [
+  "Собственные ЖД пути с удобной разгрузочно-погрузочной площадкой для обработки грузов и интеграции с логистической инфраструктурой центра",
   "Сельскохозяйственный рынок для местных производителей — 4 500 м²",
   "Выставочный центр — 34 800 м²",
   "Гостиничный комплекс на 60 мест",
@@ -25,8 +26,18 @@ export default function AboutPage() {
     <Layout>
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/aerial.jpg" alt="Аэросъёмка площадки логистического центра BRAVO" className="w-full h-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 bg-foreground/80" />
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/images/aerial.jpg"
+          >
+            <source src="/videos/about-hero.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-foreground/70" />
         </div>
         <div className="container relative z-10 text-center py-12">
           <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-primary-foreground mb-4">О проекте</h1>
