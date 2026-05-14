@@ -8,7 +8,7 @@ import SectionTitle from "@/components/SectionTitle";
 const stats = [
   { value: "41,9 га", label: "Общая площадь земель" },
   { value: "10+ млрд ₽", label: "Капитальные вложения" },
-  { value: "500+", label: "Рабочих мест" },
+  { value: "750+", label: "Рабочих мест" },
   { value: "739 млн ₽", label: "Налогов в год" },
 ];
 
