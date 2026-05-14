@@ -154,7 +154,7 @@ export default function HomePage() {
       <section className="py-20 bg-section-dark">
         <div className="container text-center">
           <h2 className="font-heading font-bold text-3xl md:text-4xl text-section-dark-foreground mb-4">
-            Почему выбирают BRAVO
+            Почему выбирают БРАВО
           </h2>
           <p className="text-section-dark-foreground/70 max-w-2xl mx-auto mb-8 text-lg">
             Единственный на Дальнем Востоке логистический центр с полным зонированием по категориям товаров, 
