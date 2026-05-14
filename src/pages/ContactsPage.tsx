@@ -5,8 +5,8 @@ import SectionTitle from "@/components/SectionTitle";
 import ContactForm from "@/components/ContactForm";
 
 const contactInfo = [
-  { icon: MapPin, label: "Адрес", value: "г. Хабаровск, Индустриальный район,\nВладивостокское шоссе" },
-  { icon: Phone, label: "Телефон", value: "+7 (4212) 00-00-00", href: "tel:+74212000000" },
+  { icon: MapPin, label: "Адрес", value: "680001, Хабаровский край, г.Хабаровск, ул.Попова, д.3" },
+  { icon: Phone, label: "Телефон", value: "+7 (4212) 26-04-20", href: "tel:+74212260420" },
   { icon: Mail, label: "Email", value: "info@bravo-group.ru", href: "mailto:info@bravo-group.ru" },
   { icon: Clock, label: "Режим работы", value: "Пн–Пт: 9:00–18:00" },
 ];
@@ -46,9 +46,9 @@ export default function ContactsPage() {
                 <h3 className="font-heading font-bold mb-3">Реквизиты</h3>
                 <div className="text-sm text-muted-foreground space-y-1">
                   <p><strong className="text-foreground">ООО «БРАВО ГРУПП»</strong></p>
-                  <p>ИНН: 2724XXXXXX</p>
-                  <p>ОГРН: 12427XXXXXXXXX</p>
-                  <p>Юридический адрес: г. Хабаровск</p>
+                  <p>ИНН: 2700029802</p>
+                  <p>ОГРН: 1242700006460</p>
+                  <p>Юридический адрес: 680001, Хабаровский край, г.Хабаровск, ул.Попова, д.3</p>
                 </div>
               </div>
             </motion.div>
