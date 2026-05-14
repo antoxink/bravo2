@@ -100,7 +100,7 @@ export default function HomePage() {
       {/* ADVANTAGES */}
       <section className="py-20 bg-section-light">
         <div className="container">
-          <SectionTitle title="Преимущества ЛЦ \"БРАВО\"" subtitle="Уникальные возможности для вашего бизнеса" />
+          <SectionTitle title='Преимущества ЛЦ "БРАВО"' subtitle="Уникальные возможности для вашего бизнеса" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((a, i) => (
               <motion.div
