@@ -32,7 +32,7 @@ const plots = [
   },
   {
     id: "III",
-    area: "21 га",
+    area: "9,3 Га",
     title: "Многофункциональный комплекс",
     items: [
       "Выставочный комплекс — 30 000 м²",
@@ -95,7 +95,7 @@ export default function LocationPage() {
 
       <section className="py-20">
         <div className="container">
-          <SectionTitle title="Земельные участки" subtitle="4 участка общей площадью 38 га — единый логистический кластер" />
+          <SectionTitle title="Земельные участки" subtitle="4 участка общей площадью 41,9 Га — единый логистический кластер" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {plots.map((p, idx) => (
               <motion.div
