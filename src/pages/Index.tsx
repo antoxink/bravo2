@@ -22,12 +22,12 @@ const advantages = [
 ];
 
 const timeline = [
-  { year: "2026", text: "Проектирование и начало строительства I очереди" },
-  { year: "2027", text: "Ввод складов класса А, парковки, АБК" },
-  { year: "2028", text: "Холодильные склады, сельхозрынок" },
-  { year: "2029", text: "Выставочный центр, гостиничный комплекс" },
-  { year: "2030", text: "Расширение складских мощностей" },
-  { year: "2031", text: "Полный ввод всех объектов комплекса" },
+  { year: "2025", text: "Строительство II очереди" },
+  { year: "2026", text: "Ввод складов класса А, парковки, АБК" },
+  { year: "2027", text: "Холодильные склады, сельхозрынок" },
+  { year: "2028", text: "Выставочный центр, гостиничный комплекс" },
+  { year: "2029", text: "Расширение складских мощностей" },
+  { year: "2030", text: "Полный ввод всех объектов комплекса" },
 ];
 
 export default function HomePage() {
@@ -125,7 +125,7 @@ export default function HomePage() {
       {/* TIMELINE */}
       <section className="py-20 bg-muted">
         <div className="container">
-          <SectionTitle title="Этапы реализации" subtitle="Дорожная карта 2026–2031" />
+          <SectionTitle title="Этапы реализации" subtitle="Дорожная карта 2025–2030" />
           <div className="max-w-4xl mx-auto relative">
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary/20 -translate-x-1/2" />
             {timeline.map((t, i) => (
