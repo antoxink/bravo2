@@ -11,12 +11,47 @@ const locationAdvantages = [
 ];
 
 const plots = [
-  { id: 1, area: "8,2 га", purpose: "Складской комплекс I очереди" },
-  { id: 2, area: "7,5 га", purpose: "Складской комплекс II очереди" },
-  { id: 3, area: "6,8 га", purpose: "Холодильные склады и рынок" },
-  { id: 4, area: "7,1 га", purpose: "Выставочный центр и гостиница" },
-  { id: 5, area: "6,3 га", purpose: "Парковка и зона ТО" },
-  { id: 6, area: "6,0 га", purpose: "Резервная территория" },
+  {
+    id: "I",
+    area: "6,3 га",
+    title: "Склады общего назначения",
+    items: [
+      "Склад общего назначения — 14 268 м²",
+      "Склад с зоной низкотемпературного хранения — 2 470 м²",
+    ],
+  },
+  {
+    id: "II",
+    area: "1,4 га",
+    title: "Административная зона и открытое хранение",
+    items: [
+      "АБК — 1 440 м²",
+      "Диспетчерская — 100 м²",
+      "Склад открытого хранения — 2 450 м²",
+    ],
+  },
+  {
+    id: "III",
+    area: "21 га",
+    title: "Многофункциональный комплекс",
+    items: [
+      "Выставочный комплекс — 30 000 м²",
+      "Сельскохозяйственный рынок — 4 500 м²",
+      "Склады общего назначения — 3 300 и 8 000 м²",
+      "Гостиница на 60 номеров и предприятие общественного питания",
+      "Охраняемая парковка на 170 м/м, зона ТО и грузовая автомойка — по 10 боксов",
+      "АБК",
+    ],
+  },
+  {
+    id: "IV",
+    area: "9,3 га",
+    title: "Складской кластер с низкотемпературным хранением",
+    items: [
+      "Склад общего назначения — 4 062 м²",
+      "4 склада общего назначения с зонами низкотемпературного хранения — по 7 798 м²",
+    ],
+  },
 ];
 
 export default function LocationPage() {
@@ -28,8 +63,13 @@ export default function LocationPage() {
 
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <div className="rounded-xl overflow-hidden shadow-lg border border-border">
-                <img src="/images/masterplan.png" alt="Генеральный план логистического центра BRAVO Хабаровск" className="w-full" loading="lazy" />
+              <div className="rounded-xl overflow-hidden shadow-lg border border-border bg-white">
+                <img
+                  src="/images/masterplan.jpg"
+                  alt="Ситуационная схема размещения объектов логистического центра BRAVO в Хабаровске"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
 
@@ -55,21 +95,36 @@ export default function LocationPage() {
 
       <section className="py-20">
         <div className="container">
-          <SectionTitle title="Земельные участки" subtitle="6 участков общей площадью 41,9 га" />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {plots.map((p) => (
+          <SectionTitle title="Земельные участки" subtitle="4 участка общей площадью 38 га — единый логистический кластер" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {plots.map((p, idx) => (
               <motion.div
                 key={p.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-card rounded-xl p-6 border border-border shadow-sm text-center"
+                transition={{ delay: idx * 0.08 }}
+                className="bg-card rounded-xl p-6 border border-border shadow-sm flex flex-col h-full"
               >
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                  <span className="font-heading font-bold text-primary text-xl">{p.id}</span>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <span className="font-heading font-bold text-primary text-lg">{p.id}</span>
+                  </div>
+                  <div className="font-heading font-bold text-2xl text-primary leading-none">
+                    {p.area}
+                  </div>
                 </div>
-                <div className="font-heading font-bold text-2xl text-primary mb-1">{p.area}</div>
-                <p className="text-sm text-muted-foreground">{p.purpose}</p>
+                <h3 className="font-heading font-semibold text-base mb-3 text-foreground">
+                  {p.title}
+                </h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {p.items.map((item, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span className="text-primary mt-1.5 shrink-0">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
