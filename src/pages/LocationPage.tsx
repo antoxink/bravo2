@@ -13,7 +13,7 @@ const locationAdvantages = [
 const plots = [
   {
     id: "I",
-    area: "6,3 га",
+    area: "6,3 Га",
     title: "Склады общего назначения",
     items: [
       "Склад общего назначения — 14 268 м²",
@@ -22,7 +22,7 @@ const plots = [
   },
   {
     id: "II",
-    area: "1,4 га",
+    area: "1,4 Га",
     title: "Административная зона и открытое хранение",
     items: [
       "АБК — 1 440 м²",
@@ -32,7 +32,7 @@ const plots = [
   },
   {
     id: "III",
-    area: "21 га",
+    area: "9,3 Га",
     title: "Многофункциональный комплекс",
     items: [
       "Выставочный комплекс — 30 000 м²",
@@ -45,7 +45,7 @@ const plots = [
   },
   {
     id: "IV",
-    area: "9,3 га",
+    area: "9,3 Га",
     title: "Складской кластер с низкотемпературным хранением",
     items: [
       "Склад общего назначения — 4 062 м²",
@@ -95,7 +95,7 @@ export default function LocationPage() {
 
       <section className="py-20">
         <div className="container">
-          <SectionTitle title="Земельные участки" subtitle="4 участка общей площадью 38 га — единый логистический кластер" />
+          <SectionTitle title="Земельные участки" subtitle="4 участка общей площадью 41,9 Га — единый логистический кластер" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {plots.map((p, idx) => (
               <motion.div
