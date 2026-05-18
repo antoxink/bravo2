@@ -59,7 +59,7 @@ export default function HomePage() {
               Современный транспортно-логистический центр<br /> Дальнего Востока
             </p>
             <p className="text-lg mb-8 text-primary-foreground/70 leading-relaxed">
-              41,9 га • Более 210 000 м² объектов • Более 120 000 м² складских площадей • Более 600 000 м³ хранения • Собственные ЖД пути и разгрузочная площадка
+              41,9 га • Более 210 000 м² объектов • Более 154 000 м² складских площадей • Более 770 000 м³ хранения • Собственные ЖД пути и разгрузочная площадка
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg" className="font-semibold">
