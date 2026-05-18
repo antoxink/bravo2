@@ -52,7 +52,7 @@ export default function AboutPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <p className="text-lg leading-relaxed text-muted-foreground mb-6">
               В рамках проекта планируется строительство логистического центра, который обеспечит качественную логистику 
-              между регионами Дальневосточного федерального округа и югом России. Общий объём инвестиций составляет 
+              между регионами Дальневосточного федерального округа, югом России и Китайской Народной Республикой. Общий объём инвестиций составляет 
               <strong className="text-foreground"> более 10 млрд руб.</strong>
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
